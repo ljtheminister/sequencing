@@ -7,12 +7,13 @@ def pattern_count(text, pattern):
             count += 1
     return count
 
-with open('dataset_2_6.txt') as f:
-    data = f.read()
-data = data.split('\n')
-dna_string = data[0]
-pattern = data[1]
+if __name__ == '__main__':
+    with open('dataset_2_6.txt') as f:
+        data = f.read()
+    data = data.split('\n')
+    dna_string = data[0]
+    pattern = data[1]
 
-count = str(pattern_count(dna_string, pattern))
-with open('sub', 'w') as f:
-    f.write(count)
+    count = str(pattern_count(dna_string, pattern))
+    with open('sub', 'w') as f:
+        f.write(count)
