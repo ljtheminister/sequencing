@@ -1,4 +1,3 @@
-
 def pattern_count(text, pattern):
     count = 0
     k = len(pattern)
@@ -13,7 +12,6 @@ if __name__ == '__main__':
     data = data.split('\n')
     dna_string = data[0]
     pattern = data[1]
-
     count = str(pattern_count(dna_string, pattern))
     with open('sub', 'w') as f:
         f.write(count)
